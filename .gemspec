@@ -13,6 +13,8 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = ">= 1.3.6"
   s.executables        = %w(ripl)
   s.add_dependency 'bond', '~> 0.4.2'
+  s.add_dependency 'hirb', '>= 0.7.1'
+  s.add-dependency 'wirb', '>= 1.0.3'
   s.add_development_dependency 'bacon', '>= 1.1.0'
   s.add_development_dependency 'rr', '>= 1.0.4'
   s.add_development_dependency 'bacon-bits'
