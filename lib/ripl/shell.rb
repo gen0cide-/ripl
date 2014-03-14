@@ -1,3 +1,6 @@
+require 'hirb'
+require 'wirb'
+
 class Ripl::Shell
   def self.create(options={})
     if options[:readline]
@@ -49,6 +52,8 @@ class Ripl::Shell
     # initialize plugins and their instance variables.
     def before_loop
       Ripl::Runner.load_rc(@irbrc) if @irbrc
+      Hirb.enable
+      Wirb.start
       add_commands(eval("self", @binding))
     end
 
