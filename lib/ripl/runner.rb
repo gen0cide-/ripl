@@ -1,3 +1,6 @@
+require 'hirb'
+require 'wirb'
+
 class Ripl::Runner
   OPTIONS_ARR = %w{-f -F -d -I -r -v -h}
   OPTIONS = {
